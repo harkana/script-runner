@@ -1,0 +1,12 @@
+CREATE USER test;
+SET PASSWORD FOR test = PASSWORD('test');
+CREATE DATABASE test;
+GRANT ALL PRIVILEGES ON test.* TO 'test'@'%';
+
+USE test;
+
+CREATE TABLE produit (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    price INT NOT NULL
+);
