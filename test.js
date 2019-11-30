@@ -4,7 +4,8 @@ const runner = new ScriptRunner({
     port: 3306,
     user: 'test',
     password: 'test',
-    db: 'test'
+    db: 'test',
+    driver: 'mysql'
 });
 
 runner.run('./script.sql').then((result) => {
