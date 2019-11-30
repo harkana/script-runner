@@ -1,8 +1,3 @@
-CREATE USER test;
-SET PASSWORD FOR test = PASSWORD('test');
-CREATE DATABASE test;
-GRANT ALL PRIVILEGES ON test.* TO 'test'@'%';
-
 USE test;
 
 CREATE TABLE produit (
